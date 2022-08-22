@@ -82,6 +82,11 @@ public class GameManager {
 		WaitForGameStart.start();
 	}
 	
+	public static void togglePause() {
+		isGamePaused = !isGamePaused;
+		WindowManager.gamePanel.setPauseMenu(isGamePaused);
+	}
+	
 	public static void onApplicationClosing() {
 		isGamePaused = true;
 		applicationIsClosing = true;

@@ -2,10 +2,10 @@ package world;
 
 import java.util.ArrayList;
 
-import file.FileManager;
 import game.Entity;
 import game.Player;
 import game.WorldGenerator;
+import main.FileManager;
 
 public class World {
 	

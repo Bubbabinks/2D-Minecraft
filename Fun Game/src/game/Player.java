@@ -73,7 +73,7 @@ public class Player extends Entity implements PhysicsCaller {
 					}
 				}
 				if (keyCode == KeyEvent.VK_ESCAPE) {
-					GameManager.isGamePaused = !GameManager.isGamePaused;
+					GameManager.togglePause();
 				}
 			}
 		});

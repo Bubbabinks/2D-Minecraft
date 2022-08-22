@@ -2,9 +2,9 @@ package world;
 
 import java.util.ArrayList;
 
-import file.FileManager;
 import game.Render;
 import game.WorldGenerator;
+import main.FileManager;
 
 public class WorldManager {
 	

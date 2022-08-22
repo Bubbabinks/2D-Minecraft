@@ -1,4 +1,4 @@
-package file;
+package main;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -33,6 +33,7 @@ public class FileManager {
 	}
 	
 	public static ArrayList<World> shortLoadAllWorlds() {
+		checkInit();
 		ArrayList<World> worlds = new ArrayList<World>();
 		for (var f: WORLDS.listFiles()) {
 			File file = new File(f.getPath()+"/details.info");

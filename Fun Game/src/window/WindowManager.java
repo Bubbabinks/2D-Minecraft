@@ -5,6 +5,8 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
 
+import com.formdev.flatlaf.FlatDarculaLaf;
+
 import main.Manager;
 
 public class WindowManager {
@@ -17,6 +19,8 @@ public class WindowManager {
 	public static GamePanel gamePanel;
 	
 	public static void init() {
+		FlatDarculaLaf.setup();
+		
 		frame = new JFrame("Fun Game");
 		mainPanel = new Panel();
 		frame.setContentPane(mainPanel);
